@@ -8,7 +8,7 @@ class App extends Component{
       <div className={css(styles.global)}>
         <h1 className={css(styles.title, styles.red)}>Hello World</h1>
         <h1 className={css(styles.blue)}>Hello World</h1>
-        <img src={require('./picture.png')} />
+        <img src={'./assets/img/picture.png'} />
       </div>
     );
   }
