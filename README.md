@@ -6,6 +6,7 @@ Just a personnal sandbox to experiment react and it's environment (webpack, babe
 * [Setting up webpack, Babel and React from scratch](https://stanko.github.io/setting-up-webpack-babel-and-react-from-scratch/)
 * [Github repo with React, webpack and Babel](https://github.com/alicoding/react-webpack-babel)
 * [CSS in JS projects list](https://github.com/MicheleBertoli/css-in-js)
+* [Webpack — The Confusing Parts](https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9)
 
 ## What and Why ?
 * `React` : to write and include web component
@@ -32,6 +33,8 @@ Just some thoughts, not fixed :
 ## Continue
 * Global and ~~component~~ **style**
 * Improve webpack configs (dev, prod)
+* Client and Server side rendering
 * Sort dev/non-dev npm dependencies
 * Look for naming good practices
 * Create smart components (with controller)
+* Webpack Hot Module Replacement (HMR)

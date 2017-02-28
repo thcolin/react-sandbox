@@ -9,7 +9,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
+      { test: /\.jsx?$/, loader: 'babel-loader', exclude: /(node_modules|bower_components)/ },
+      { test: /\.(png|jpg)/, loader: 'url-loader?limit=15000' }
     ]
   },
   plugins: [
