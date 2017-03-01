@@ -42,6 +42,7 @@ Just some thoughts, not fixed :
 * Global style
   * Create a stylesheet for `App`
     * Does the stylesheet support deep declarations (`.input-group input` for example) ?
+    * No, and you should avoid thinking style this way, if it's truly necessary, make a basic css stylesheet and import it in `App`
 * Root import in src with `babel-plugin-root-import`
 * Implement `bootstrap` and `font-awesome`
   * With appropriates loaders (`style-loader` and `css-loader` for CSS, and `url-loader` for fonts)
@@ -50,13 +51,15 @@ Just some thoughts, not fixed :
   * Just don't use `Bower` anymore, use `npm` instead and simply import dependencies into your `js` project
 
 ## Continue
+* Use `normalize.css`
 * Export template to detached file
   * Is it a good practice or not ?
 * Improve webpack configs (dev, prod)
 * Client and Server side rendering
 * Sort dev/non-dev npm dependencies
 * Look for naming good practices
+  * [Airbnb React Styleguide](https://github.com/airbnb/javascript/tree/master/react)
 * Create smart components (with controller)
 * Webpack Hot Module Replacement (HMR)
 * Data flow & concepts (see [Flux](https://github.com/facebook/flux/) and [Redux](http://redux.js.org/))
-* Full compatibility with : `web-component` concept, `Polymer Project` and `React` (also `Inferno`)
+* Full compatibility with : `web-component` concept, `Polymer Project` and `React` (also `Inferno` and `Preact`)
