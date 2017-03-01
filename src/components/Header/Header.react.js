@@ -7,7 +7,10 @@ class Header extends Component{
   render(){
     return(
       <div className={css(styles.global)}>
-        <h1 className={css(styles.title, styles.red)}>Hello World</h1>
+        <h1 className={css(styles.title, styles.red)}>
+          <i className={'fa fa-camera-retro'}></i>
+          Hello World
+        </h1>
         <p className={css(styles.blue)}>Lorem ipsum</p>
         <img src="./assets/img/picture.png" />
       </div>

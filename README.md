@@ -43,11 +43,13 @@ Just some thoughts, not fixed :
   * Create a stylesheet for `App`
     * Does the stylesheet support deep declarations (`.input-group input` for example) ?
 * Root import in src with `babel-plugin-root-import`
-
-## Continue
+* Implement `bootstrap` and `font-awesome`
+  * With appropriates loaders (`style-loader` and `css-loader` for CSS, and `url-loader` for fonts)
 * How to implement `bower_components` or simply front packages ?
   * There is no more distinction between front and back packages, so :
-  * Just don't use `Bower` anymore, use `npm` instead and simply import dependencies into your `js` project (or with a `webpack` plugin ?)
+  * Just don't use `Bower` anymore, use `npm` instead and simply import dependencies into your `js` project
+
+## Continue
 * Export template to detached file
   * Is it a good practice or not ?
 * Improve webpack configs (dev, prod)
