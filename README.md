@@ -37,20 +37,23 @@ Just some thoughts, not fixed :
 ```
 
 ## Done
+* Render the `App` inside `#app`
+  * [Don't render directly into the body](https://medium.com/@dan_abramov/two-weird-tricks-that-fix-react-7cf9bbdef375#.6lxg20rk8)
 * Component style
   * Create a stylesheet with `Aphrodite`
 * Global style
   * Create a stylesheet for `App`
     * Does the stylesheet support deep declarations (`.input-group input` for example) ?
     * No, and you should avoid thinking style this way, if it's truly necessary, make a basic css stylesheet and import it in `App`
-* Root import in src with `babel-plugin-root-import`
 * Implement `bootstrap` and `font-awesome`
   * With appropriates loaders (`style-loader` and `css-loader` for CSS, and `url-loader` for fonts)
 * How to implement `bower_components` or simply front packages ?
   * There is no more distinction between front and back packages, so :
+  * Con, it could be hard for some libs, and painful to maintain complex libs (which file should I include ?)
   * Just don't use `Bower` anymore, use `npm` instead and simply import dependencies into your `js` project
 
 ## Continue
+* Resolve src `js` files with ~~`babel-plugin-root-import`~~ [Webpack resolve.modules](https://webpack.js.org/configuration/resolve/#resolve-modules)
 * Use `normalize.css`
 * Export template to detached file
   * Is it a good practice or not ?
